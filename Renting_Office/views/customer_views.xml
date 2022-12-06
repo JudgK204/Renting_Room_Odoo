@@ -1,0 +1,68 @@
+<odoo>
+	<record id="customer_view_tree" model="ir.ui.view">
+   		<field name="name">customer.tree</field>
+   		<field name="model">customer</field>
+   		<field name="arch" type="xml">
+      		<tree string="Customer Tree" decoration-success="state=='new'" 
+               								decoration-info="state =='renting'" 
+               								decoration-danger="state =='old'">  
+               	<header>
+        			<button name="change_to_new" type="object" string="Khách hàng mới"/>
+        			<button name="change_to_renting" type="object" string="Khách đang thuê"/>
+        			<button name="change_to_off" type="object" string="Khách đã thuê"/>
+    			</header>     	
+    			<field name="customer_id" optional="show"/>	
+        		<field name="state" decoration-success="state=='new'" 
+               								decoration-info="state =='renting'" 
+               								decoration-danger="state =='old'"
+               								  optional="show"/>       		
+        		
+        		<field name="name" optional="show"/>
+        		<field name="gender" optional="show"/>
+        		<field name="age" optional="show"/>
+        		<field name="address" optional="show"/>
+        		<field name ="phone_number" optional="show"/>
+        		<field name="avatar" widget="binary"/>
+        		<field name="room_ids" optional="show"/>
+        		<field name="company_id"/>
+      		</tree>
+   		</field>
+	</record>
+<!--                Graph view                   -->
+	<record id="customer_view_graph" model="ir.ui.view">
+   		<field name="model">customer</field>
+   		<field name="arch" type="xml">
+      		<graph type="bar">
+         		<field name="state"/>
+      		</graph>
+   		</field>
+	</record>
+	<record id="customer_view_search" model="ir.ui.view">
+   		<field name="name">customer.search</field>
+   		<field name="model">customer</field>
+   		<field name="arch" type="xml">
+      		<search string="Customers Search">
+         		<field name="name" filter_domain="[('name', 'ilike', self)]"/>
+         		
+         		<field name="customer_id" />
+         		<field name="age" filter_domain="[('age', 'ilike', self)]"/>
+         		<searchpanel>
+         			<field name='state' icon='fa-spinner' select='multi'/>
+         			<field name='gender' icon='fa fa-user-circle-o' select='multi'/>
+         		</searchpanel>
+      		</search>
+   		</field>
+	</record>
+	
+<!-- 					Action và Menuitem 				-->
+
+	<record id='customer_action' model='ir.actions.act_window'>
+		<field name='name'>Customer</field>
+		<field name='res_model'>customer</field>
+		<field name="view_mode">tree,form,graph</field>
+	</record>
+
+	<menuitem id='customer_info' action='customer_action'
+	parent='room_management_customer_menu_action' name='Customer' sequence='40'/>
+	
+</odoo>

@@ -1,0 +1,990 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Renting_Office
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-12 03:36+0000\n"
+"PO-Revision-Date: 2022-11-12 03:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__action
+msgid "Action"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__active
+msgid "Active"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__icon
+msgid "Activity"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.Wizard_Actions
+msgid "Add Address"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__address
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__address
+msgid "Address"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_kanban_views
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_kanban_views
+msgid "Address:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:res.groups,name:Renting_Office.room_management_group_admin
+msgid "Administrator"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__age
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__age
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__age
+msgid "Age"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__an_ninh
+msgid "Anh ninh"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_search
+msgid "Archive"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__avatar
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__avatar
+msgid "Avatar"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.Wizard_Form
+msgid "Cancel"
+msgstr ""
+
+#. module: Renting_Office
+#: code:addons/Renting_Office/models/customer.py:0
+#, python-format
+msgid "Changing customer status from %s to %s is not allowed."
+msgstr "Thay đổi trạng thái khách hàng từ %s sang %s là không được phép"
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__chăm_sóc_sức_khỏe
+msgid "Chăm sóc sức khỏe"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_detail__status__3
+msgid "Chưa hoạt động"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.Wizard_Form
+msgid "Confirm"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.contact_action
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__contact_ids
+#: model:ir.ui.menu,name:Renting_Office.room_management_contact
+msgid "Contact"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.contact_view_search
+msgid "Contact Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.contact_view_tree
+msgid "Contact Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.Wizard_Form
+msgid "Contract"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__create_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__create_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__currency_id
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__cus_management_ids
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__cus_management_ids
+msgid "Cus Management"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.customer_action
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__address
+#: model:ir.ui.menu,name:Renting_Office.customer_info
+#: model:ir.ui.menu,name:Renting_Office.room_management_customer_menu_action
+msgid "Customer"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_form
+msgid "Customer Form"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.customer_management_action
+#: model:ir.model,name:Renting_Office.model_customer_management
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__customer_management_id
+#: model:ir.ui.menu,name:Renting_Office.customer_management
+msgid "Customer Management"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_view_tree
+msgid "Customer Management Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__name
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__name
+msgid "Customer Name"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_tree
+msgid "Customer Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_view_search
+msgid "Customers Management Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_search
+msgid "Customers Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__date
+msgid "Date"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__dob
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__dob
+msgid "Date of birth"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__display_name
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "Done"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__dạy_học
+msgid "Dạy học"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_kanban_views
+msgid "End Date:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__gender
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__gender
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__gender
+msgid "Gender"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_kanban_views
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_kanban_views
+msgid "Gender:"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "Get Metadata"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__level__4
+msgid "Giám đốc"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__parent_id
+msgid "Group"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__area__2
+msgid "Hà Nội"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__area__1
+msgid "Hải Phòng"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__id
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__id
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__id
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__id
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__id
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__id
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__id
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__id
+msgid "ID"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__customer_id
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__customer_id
+msgid "ID Customer"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_kanban_views
+msgid "ID:"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "Ids"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__image
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__image
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__image
+msgid "Image"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__img
+msgid "Img"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__infomation
+msgid "Infomation"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_kanban_views
+msgid "Infomation:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__customer__gender__3
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__gender__3
+msgid "Khác"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__customer__state__old
+msgid "Khách hàng cũ"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__customer__state__new
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_tree
+msgid "Khách hàng mới"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__customer__state__renting
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_tree
+msgid "Khách đang thuê"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_tree
+msgid "Khách đã thuê"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__kiểm_tra_mail
+msgid "Kiểm tra mail"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_customer____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager____last_update
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__write_uid
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_report__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__write_date
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__level
+msgid "Level"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_kanban_views
+msgid "Level:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__area
+msgid "Management Area"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.room_manager_action
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__related_room
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__manager_id
+#: model:ir.ui.menu,name:Renting_Office.room_manager
+msgid "Manager"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__manager_id
+msgid "Manager ID"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_kanban_views
+msgid "Manager ID:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__name
+msgid "Manager Name"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__manager_level
+msgid "Manager level"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_kanban_views
+msgid "Manager:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__service_price
+msgid "Money"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_kanban_views
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_kanban_views
+msgid "Money:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__level__1
+msgid "Môi giới"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_detail__status__1
+msgid "Mới"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__customer__gender__1
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__gender__1
+msgid "Nam"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_kanban_views
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_kanban_views
+msgid "Name:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__level__2
+msgid "Nhân viên"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__note
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__note
+msgid "Note"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__nấu_ăn
+msgid "Nấu ăn"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__customer__gender__2
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__gender__2
+msgid "Nữ"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.module.category,name:Renting_Office.module_renting_office_management
+msgid "Office"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__parent_id
+msgid "Parent"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__parent_path
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__phone_number
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__phone_number
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__phone
+msgid "Phone Number"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.view_room_detail_pivot
+msgid "Pivot"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,help:Renting_Office.field_room_manager__area
+msgid "Please select area!"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,help:Renting_Office.field_room_detail__manager_level
+#: model:ir.model.fields,help:Renting_Office.field_room_manager__level
+msgid "Please select level!"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,help:Renting_Office.field_room_detail__status
+msgid "Please select room status!"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__price
+msgid "Price"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_tree
+msgid "Price sum"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__level__3
+msgid "Quản lý"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__rate
+msgid "Rate"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.module.category,name:Renting_Office.module_renting_office
+msgid "Renting Office"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__room_id
+msgid "Room"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__room_address
+msgid "Room Address"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.room_detail_action
+#: model:ir.model,name:Renting_Office.model_room_detail
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__detail_ids
+#: model:ir.ui.menu,name:Renting_Office.room_detail
+msgid "Room Detail"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "Room Detail Form"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_search
+msgid "Room Detail Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_tree
+msgid "Room Detail Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model,name:Renting_Office.model_room_management
+#: model:ir.ui.menu,name:Renting_Office.room_management_menu_root
+msgid "Room Management"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model,name:Renting_Office.model_room_manager
+msgid "Room Manager"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_view_search
+msgid "Room Manager Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_view_tree
+msgid "Room Manager Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__name
+msgid "Room Name"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_contact__service_ids
+#: model:ir.ui.menu,name:Renting_Office.room_service
+msgid "Room Service"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_calendar
+msgid "Room Service Calendar"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_view_search
+msgid "Room Service Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_view_tree
+msgid "Room Service Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_management_view_tree
+msgid "Room Tree"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_kanban_views
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_manager_kanban_views
+msgid "Room:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.room_management_action
+#: model:ir.ui.menu,name:Renting_Office.room_management_menu_action
+msgid "Rooms"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__rèn_luyện
+msgid "Rèn luyện"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_view_tree
+msgid "SUM"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_view_form
+msgid "Search"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,help:Renting_Office.field_customer__gender
+#: model:ir.model.fields,help:Renting_Office.field_customer_management__gender
+msgid "Select gender!"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.actions.act_window,name:Renting_Office.room_service_action
+msgid "Service"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__name
+msgid "Service Name"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__size
+msgid "Size"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_tree
+msgid "Size sum"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_manager__priority
+msgid "Star rating"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_service__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_kanban_views
+msgid "Start Date:"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.customer_management_kanban_views
+msgid "State:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer__state
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__state
+msgid "Status"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_kanban_views
+msgid "Status:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__sửa_chữa
+msgid "Sửa chữa"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__sự_kiện
+msgid "Sự kiện"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_service_kanban_views
+msgid "Title:"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__area__4
+msgid "Tp.Hcm"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__trông_trẻ
+msgid "Trông trẻ"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__tư_vấn
+msgid "Tư vấn"
+msgstr ""
+
+#. module: Renting_Office
+#: model:res.groups,name:Renting_Office.room_management_group_user
+msgid "User"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_service__name__vệ_sinh_nhà
+msgid "Vệ sinh nhà"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "browse"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model,name:Renting_Office.model_contact
+msgid "contact"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_customer_management__cus_id
+msgid "customer"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model,name:Renting_Office.model_customer
+msgid "customer infomation"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model,name:Renting_Office.model_customer_report
+msgid "customer.report"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "default get"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__priority__0
+msgid "extremely low"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "fields get"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "filtered"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "filtered domain"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,help:Renting_Office.field_room_manager__gender
+msgid "gender"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__priority__4
+msgid "high"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__contact__action__ir_actions_act_url
+msgid "ir.actions.act_url"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__contact__action__ir_actions_act_window
+msgid "ir.actions.act_window"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__contact__action__ir_actions_client
+msgid "ir.actions.client"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__contact__action__ir_actions_report
+msgid "ir.actions.report"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__contact__action__ir_actions_server
+msgid "ir.actions.server"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__priority__1
+msgid "low"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "mapped"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__priority__3
+msgid "medium"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_management__name
+msgid "name"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "name create"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "name search"
+msgstr ""
+
+#. module: Renting_Office
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#, python-format
+msgid "new"
+msgstr "mới"
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__priority__2
+msgid "normal"
+msgstr ""
+
+#. module: Renting_Office
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#, python-format
+msgid "old"
+msgstr "cũ"
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "read"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "read group"
+msgstr ""
+
+#. module: Renting_Office
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#: code:addons/Renting_Office/models/customer.py:0
+#, python-format
+msgid "renting"
+msgstr "đang thuê"
+
+#. module: Renting_Office
+#: model:ir.model.fields,field_description:Renting_Office.field_room_detail__status
+msgid "room status"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model,name:Renting_Office.model_room_service
+msgid "room.service"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "search"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "sorted"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__priority__5
+msgid "very high"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "with context"
+msgstr ""
+
+#. module: Renting_Office
+#: model_terms:ir.ui.view,arch_db:Renting_Office.room_detail_view_form
+msgid "write"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_detail__status__2
+msgid "Đang cho thuê"
+msgstr ""
+
+#. module: Renting_Office
+#: model:ir.model.fields.selection,name:Renting_Office.selection__room_manager__area__3
+msgid "Đà Nẵng"
+msgstr ""

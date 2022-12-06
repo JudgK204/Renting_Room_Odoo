@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- 						FORM VIEW								 -->
+	
+	<record id="room_detail_view_form" model="ir.ui.view">
+   		<field name="name">room.detail.form</field>
+   		<field name="model">room.detail</field>
+   		<field name="arch" type="xml">
+      		<form string="Room Detail Form">
+      			<header>   
+      				<button name='btn_test2' type='object' string='Test2'/>      			
+      				<button name='action_success' type='object' string='Done'/>      			
+	      			<button name='button_read' type='object' string='read'/>
+      				<button name='button_read_group' type='object' string='read group'/>
+      				<button name='button_browse' type='object' string='browse'/>
+      				<button name='button_search' type='object' string='search'/>
+      				<button name='button_name_search' type='object' string='name search'/>
+      				<button name='button_fields_get' type='object' string='fields get'/>
+      				<button name='btn_filtered' type='object' string='filtered'/>
+      				<button name='btn_filtered_domain' type='object' string='filtered domain'/>
+      				<button name='btn_mapped' type='object' string='mapped'/>
+      				<button name='btn_sorted' type='object' string='sorted'/>
+      				<button name='btn_default_get' type='object' string='default get'/>
+      				<button name='btn_name_create' type='object' string='name create'/>
+      				<button name='btn_get_metadata' type='object' string='Get Metadata'/>
+      				<button name='search_all' type='object' string='with context'/>
+      				<button name='btn_ids' type="object" string="Ids"/> 
+      				<button name="btn_copy" type="object" string="Copy"/>	
+      				<button name='btn_datetime' type='object' string='datetime'/>
+      				<button name="btn_flush" type="object" string="flush"/>
+      				<button name="btn_test_context" type="object" string="Context"/>
+      			</header>
+      			<sheet>
+         		<group>           		
+               		<group>
+               			<field name="name"/>
+               			<field name="manager_level"/>
+               			<field name="manager_id" groups="Renting_Office.room_management_group_admin"/>
+               			<field name="rate" />
+               			<field name="size" />
+               			<field name="room_address" />
+               			<field name="currency_id"/>
+						<field name="price"/>
+               			<field name="date" />
+               			<field name="state" />  
+               			<field name='active'/> 
+               			<field name="customer_id"/> 
+            		</group>
+					<group>
+            			<field name="image" widget="image"/>
+               		</group>           			
+         		</group>
+         		</sheet>
+      		</form>
+   		</field>
+	</record>
+	
+<!-- 							TREE VIEW								 -->
+	
+	<record id="room_detail_view_tree" model="ir.ui.view">
+   		<field name="name">room.detail.tree</field>
+   		<field name="model">room.detail</field>
+   		<field name="arch" type="xml">
+      		<tree string="Room Detail Tree" decoration-success="state=='1'" 
+               								decoration-info="state =='2'" 
+               								decoration-danger="state =='3'">
+
+      			<field name="name" optional="show"/>
+      			<field name="manager_level" optional="show"/>
+      			<field name="manager_id" optional="show"/>
+        		<field name="size" optional="show" sum="Size sum"/>
+        		<field name="price" optional="show" sum="Price sum"/>
+        		<field name="currency_id" optional="show" invisible="1"/>
+        		<field name ="state" decoration-success="state=='1'" 
+               							decoration-info="state =='2'" 
+               								decoration-danger="state =='3'" widget='badge' optional="show"/>
+        		<field name="room_address" optional="show"/>
+        		<field name="active" invisible='1'/>
+        		<field name="customer_id"/> 
+      		</tree>
+   		</field>
+	</record>
+	
+<!-- 						KANBAN 								-->
+	
+	<record id="room_detail_kanban_views" model="ir.ui.view">
+		<field name="name">room.detail.kanban_views</field>
+		<field name="model">room.detail</field>
+		<field name="arch" type="xml">
+			<kanban default_group_by="state">
+			<progressbar field="state" colors='{"1": "success", "2": "info", "3":"danger"}' />
+               	<field name="currency_id"/>
+				<field name="price"/>
+				<templates>
+					<t t-name="kanban-box">
+						<div t-attf-class="oe_kanban_global_click">
+							<div class="o_kanban_image">
+								<field name="image" widget="image"/>
+							</div>
+							<div class="oe_kanban_details">
+								<ul>
+									<li>
+										<b>
+											Room:
+											<field name='name'/>
+										</b>
+									</li>
+									<li>
+										Manager:
+										<field name="manager_id"/>
+									</li>
+									<li>
+										Money:
+										<field name="price"/>
+									</li>
+									<li>
+										Status:
+										<field name="state" decoration-success="state=='1'" 
+               								decoration-info="state =='2'" 
+               								decoration-danger="state =='3'" widget='badge'/>
+									</li>
+									<lid>
+										Address:
+										<field name="room_address"/>
+									</lid>
+								</ul>
+							</div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+	
+	<!-- 						View calendar 						-->	
+	
+	<record id="room_detail_calendar" model="ir.ui.view">
+		<field name="name">room.detail.calendar</field>
+		<field name="model">room.detail</field>		
+		<field name="arch" type="xml">
+			<calendar string='Room Detail Calendar' date_start='date' color="manager_id" mode="month">
+				<field name="name" />
+               	<field name="date"/>
+			</calendar>
+		</field>
+	</record>
+	
+<!--                		Graph view        			           -->
+	
+	<record id="room_detail_view_graph" model="ir.ui.view">
+   		<field name="model">room.detail</field>
+   		<field name="arch" type="xml">
+      		<graph type="bar">
+         		<field name="state"/>    
+      		</graph>
+   		</field>
+	</record>
+
+<!-- 						PIVOT 								-->
+
+	<record id="view_room_detail_pivot" model="ir.ui.view">
+         <field name="name">room.detail.pivot</field>
+         <field name="model">room.detail</field>
+         <field name="arch" type="xml">
+             <pivot string="Pivot">
+                 <field name="name" type="col"/>
+                 <field name="date" type="row"/>
+                 <field name="price" type="measure"/>
+                 <field name="size" type="measure"/>
+             </pivot>
+         </field>
+    </record>
+    
+<!-- 						Search									 -->
+	
+	<record id="room_detail_view_search" model="ir.ui.view">
+   		<field name="name">room.detail.search</field>
+   		<field name="model">room.detail</field>
+   		<field name="arch" type="xml">
+	      	<search string="Room Detail Search">
+	         	<field name="name" filter_domain="[('name', 'ilike', self)]"/>
+	         	<field name="manager_id" widget="many2one"/>
+	         	<filter name='filter_archive' string='Archive' domain="[('active','=',False)]"/>
+	         	<searchpanel>
+	         		<field name='state' icon='fa fa-home' select='multi'/>
+	         		<field name='manager_id' icon='fa fa-user' select='multi'/>
+	         		<field name='currency_id' icon='fa fa-money' select='multi'/>
+	         	</searchpanel>
+	      	</search>
+   		</field>
+	</record>
+	
+<!--				 Tạo action và menuitem 				-->
+
+	<record id="room_detail_action" model="ir.actions.act_window">
+		<field name="name">Room Detail</field>
+		<field name="res_model">room.detail</field>
+		<field name="view_mode">kanban,tree,graph,calendar,pivot,form</field>
+	</record>
+	
+	<menuitem id="room_detail" action="room_detail_action"
+		parent="room_management_menu_action" name="Room Detail" sequence="10"/>
+</odoo>

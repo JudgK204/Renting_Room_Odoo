@@ -1,0 +1,131 @@
+<odoo>
+<!-- 					TREE VIEW							 -->
+	<record id="room_manager_view_tree" model="ir.ui.view">
+   		<field name="name">room.manager.tree</field>
+   		<field name="model">room.manager</field>
+   		<field name="arch" type="xml">
+      		<tree string="Room Manager Tree"  decoration-muted="level=='1'" 
+               						decoration-info="level =='2'" 
+               						decoration-primary="level =='3'"
+               						decoration-success="level =='4'" >
+               	<header>
+               		<button name='button_write_0' type='object' string='write 0'/>
+               		<button name='button_write_1' type='object' string='write 1'/>
+               		<button name='button_write_2' type='object' string='write 2'/>
+               		<button name='button_write_3' type='object' string='write 3'/>
+               		<button name='button_write_4' type='object' string='write 4'/>
+               		<button name='button_write_5' type='object' string='write 5'/>
+               		<button name='button_write_6' type='object' string='write 6'/>
+               	<button name='btn_fl' type='object' string='fl'/>
+               		
+               	</header>
+				<field name='priority'  widget='priority' optional="show"/>
+				<field name="img" widget="image"/>
+        		<field name="name" optional="show"/>
+        		<field name="manager_id" optional="show" groups="Renting_Office.room_management_group_admin"
+        		context="{'default_type':'priority'}"/>
+        		<field name="level" decoration-muted="level=='1'" 
+               						decoration-info="level =='2'" 
+               						decoration-primary="level =='3'"
+               						decoration-success="level =='4'" widget='badge'/>
+        		<field name='gender' optional="show"/>
+        		<field name="age" optional="show"/>
+        		<field name="phone" optional="show"/>
+        		<field name ="area" optional="show"/>
+        		<field name="detail_ids" optional='show' groups="Renting_Office.room_management_group_admin"/>
+        		
+      		</tree>
+   		</field>
+	</record>
+	
+<!-- 				Room manager kanban views 					-->
+
+	<record id="room_manager_kanban_views" model="ir.ui.view">
+		<field name="name">room.manager.kanban_views</field>
+		<field name="model">room.manager</field>
+		<field name="arch" type="xml">
+			<kanban default_group_by="level">
+        		<field name="level" decoration-muted="level=='1'" 
+               						decoration-info="level =='2'" 
+               						decoration-primary="level =='3'"
+               						decoration-success="level =='4'" widget='badge'/>
+				<templates>
+					<t t-name="kanban-box">
+						<div t-attf-class="oe_kanban_global_click">
+							<div class="o_kanban_image">
+								<field name="img" widget="image"/>
+							</div>
+							<div class="oe_kanban_details">
+								<ul>
+									<li>
+										<b>
+											Name:
+											<field name='name'/>
+										</b>
+									</li>
+									<li>
+										Manager ID:
+										<field name="manager_id"/>
+									</li>
+									<li>
+										Level:
+										<field name="level" decoration-muted="level=='1'" 
+               						decoration-info="level =='2'" 
+               						decoration-primary="level =='3'"
+               						decoration-success="level =='4'" widget='badge'/>
+									</li>
+									<li>
+										Gender:
+										<field name="gender"/>
+									</li>
+									<lid>
+										Room:
+										<field name="priority" widget="priority"/>
+									</lid>
+								</ul>
+							</div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+	
+<!--               					Graph view                   -->
+	
+	<record id="room_manager_view_graph" model="ir.ui.view">
+   		<field name="model">room.manager</field>
+   		<field name="arch" type="xml">
+      		<graph type="bar">
+         		<field name="level"/>
+      		</graph>
+   		</field>
+	</record>
+	<record id="room_manager_view_search" model="ir.ui.view">
+   		<field name="name">room.manager.search</field>
+   		<field name="model">room.manager</field>
+   		<field name="arch" type="xml">
+      	<search string="Room Manager Search">
+         	<field name="name" filter_domain="[('name', 'ilike', self)]"/>
+         	<field name="area"/>
+         	<field name="parent_id" operator="parent_of"/>
+         	<searchpanel>
+         			<field name='level' icon='fa fa-user' select='multi'/>
+         			<field name='area' icon='fa fa-map' select='multi'/>
+         			<field name='priority' icon='fa fa-star' select='multi' widget="priority"/>
+         	</searchpanel>
+      	</search>
+   		</field>
+	</record>
+	
+<!-- 							Action và menuitem					 -->
+	
+		<record id="room_manager_action" model="ir.actions.act_window">
+		<field name="name">Manager</field>
+		<field name="res_model">room.manager</field>
+		<field name="view_mode">tree,form,kanban,graph</field>
+	</record>
+	
+	<menuitem id="room_manager" action="room_manager_action" 
+	parent="room_management_menu_action" name="Manager" sequence="20"/>
+</odoo>

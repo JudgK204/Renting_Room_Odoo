@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="room_manager_1" model="room.manager">
+				<field name="name">Đặng Vũ Nguyên</field>
+        		<field name="age">45</field>
+        		<field name="phone">091237923</field>
+		</record>
+		<record id="room_manager_2" model="room.manager">
+			<field name="name">Lê Hoàng Ánh</field>
+        	<field name="age">28</field>
+        	<field name="phone">099821782</field>
+		</record>
+		<record id="room_manager_3" model="room.manager">
+			<field name="name">Bùi Công Đoàn</field>
+        		<field name="age">45</field>
+        		<field name="phone">098347281</field>
+		</record>
+		<record id="room_manager_4" model="room.manager">
+			<field name="name">Lê Hoàng Ánh</field>
+        		<field name="age">25</field>
+        		<field name="phone">098432383</field>
+		</record>
+		<record id="room_manager_5" model="room.manager">
+			<field name="name">Vũ Công Đài</field>
+        		<field name="age">52</field>
+        		<field name="phone">092472422</field>
+		</record>
+		<record id="room_manager_6" model="room.manager">
+			<field name="name">Lâm Thị Ánh Như</field>
+        		<field name="age">39</field>
+        		<field name="phone">0945834493</field>
+		</record>
+		<record id="room_manager_7" model="room.manager">
+			<field name="name">Vũ Đình Toàn</field>
+        		<field name="age">45</field>
+        		<field name="phone">095238439</field>
+		</record>
+		<record id="room_manager_8" model="room.manager">
+			<field name="name">Nhật Anh</field>
+        		<field name="age">64</field>
+        		<field name="phone">092349348</field>
+		</record>
+	</data>
+</odoo>

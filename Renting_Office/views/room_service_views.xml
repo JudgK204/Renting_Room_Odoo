@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- 						Tree view										 -->
+
+	<record id="room_service_view_tree" model="ir.ui.view">
+   		<field name="name">room.service.tree</field>
+   		<field name="model">room.service</field>
+   		<field name="arch" type="xml">
+      		<tree string="Room Service Tree">
+      			<field name="name" optional="show"/>
+      			<field name='icon' optional="show"/>
+               	<field name="infomation" optional="show"/>
+               	<field name="service_price" optional="show" sum="SUM"/>
+               	<field name="currency_id" invisible="1"/>  
+               	<field name="start_date" optional="show"/>
+               	<field name="end_date" optional="show"/>
+                	<!-- <field name="rf"/> -->
+                	<field name="company_id"/>
+      		</tree>
+   		</field>
+	</record>
+	
+<!-- 						View calendar 						-->	
+	
+	<record id="room_service_calendar" model="ir.ui.view">
+		<field name="name">room.service.calendar</field>
+		<field name="model">room.service</field>		
+		<field name="arch" type="xml">
+			<calendar string='Room Service Calendar' date_start='start_date' date_stop='end_date' mode="month">
+				<field name="name" />
+               	<field name="start_date"/>
+               	<field name="end_date"/>
+			</calendar>
+		</field>
+	</record>
+	
+<!--					Kanban views							 -->
+		
+	<record id="room_service_kanban_views" model="ir.ui.view">
+		<field name="name">room.service.kanban_views</field>
+		<field name="model">room.service</field>
+		<field name="arch" type="xml">
+			<kanban>
+				<templates>
+					<t t-name="kanban-box">
+						<div t-attf-class="oe_kanban_global_click">
+							<div class="o_kanban_image">
+								
+							</div>
+							<div class="oe_kanban_details">
+								<ul>
+									<li>
+										<b>
+											Title:
+											<field name='name'/>
+										</b>
+									</li>
+									<li>
+										Infomation:
+										<field name="infomation"/>
+									</li>
+									<li>
+										Money:
+										<field name="service_price"/>
+									</li>
+									<li>
+										Start Date:
+										<field name="start_date"/>
+									</li>
+									<lid>
+										End Date:
+										<field name='end_date'/>
+									</lid>
+								</ul>
+							</div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+				
+<!--						 Search								 -->
+					
+	<record id="room_service_view_search" model="ir.ui.view">
+   		<field name="name">room.service.search</field>
+   		<field name="model">room.service</field>
+   		<field name="arch" type="xml">
+      	<search string="Room Service Search">
+         	<field name="name" filter_domain="[('name', 'ilike', self)]"/>
+      	</search>
+   		</field>
+	</record>
+	
+					<!-- Action and Menuitem -->
+						
+	<record id="room_service_action" model="ir.actions.act_window">
+		<field name="name">Service</field>
+		<field name="res_model">room.service</field>
+		<field name="view_mode">tree,form,kanban,calendar</field>
+	</record>
+	<menuitem id="room_service" action="room_service_action"
+		parent="room_management_menu_action" name="Room Service" sequence="30"/>
+</odoo>

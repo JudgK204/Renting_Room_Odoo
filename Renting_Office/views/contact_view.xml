@@ -1,0 +1,42 @@
+<odoo>
+	
+<!-- 					Tree view					 -->
+
+	<!-- <record id="contact_view_tree" model="ir.ui.view">
+		<field name="name">contact.tree</field>
+		<field name="model">customer</field>
+		<field name="arch" type="xml">
+			<tree string="Contact Tree">
+				<header>
+					<button name="btn_test" type="object" string="test"/>
+				</header>	
+				<field name="service_ids"/>	 
+			</tree>
+		</field>
+	</record> -->
+	
+<!-- 					Search 							-->
+	
+	<!-- <record id="contact_view_search" model="ir.ui.view">
+   		<field name="name">contact.search</field>
+   		<field name="model">contact</field>
+   		<field name="arch" type="xml">
+      		<search string="Contact Search">
+         		<field name="room"/>
+         		<field name="related_room"/>
+      		</search>
+   		</field>
+	</record> -->
+	
+<!-- 						Action + Menuitem			 -->
+	
+	<record id='contact_action' model='ir.actions.act_window'>
+		<field name='name'>Contact</field>
+		<field name='res_model'>customer</field>
+		<field name="view_mode">tree,form</field>
+		<field name="domain">[("state","=","renting")]</field>
+	</record>
+
+	<menuitem id="room_management_contact" action="contact_action"
+		parent="room_management_menu_root" name="Contact" sequence="30"/>
+</odoo>

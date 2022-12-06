@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="room_management_action" model="ir.actions.act_window">
+		<field name="name">Rooms</field>
+		<field name="res_model">room.management</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem name="Room Management" id="room_management_menu_root" />
+====================================Rooms================================================================
+
+	<menuitem id="room_management_menu_action" action="room_management_action"
+		parent="room_management_menu_root" name="Rooms" sequence="10" />
+	<menuitem id="room_management_customer_menu_action" action="room_management_action"
+		parent="room_management_menu_root" name="Customer" sequence="20" groups="Renting_Office.room_management_group_admin"/>
+		
+=========================================================================================================
+	<!-- <record id="room_management_view_form1" model="ir.ui.view">
+   		<field name="name">room.management.view.form1</field>
+   		<field name="model">room.management</field>
+   		<field name="inherit_id" ref="room_detail_view_form"/>
+   		<field name="arch" type="xml">
+      		<button name="a_success" type="object" icon="fa-inbox"/>
+   		</field>
+	</record> -->
+
+	<record id="room_management_view_tree" model="ir.ui.view">
+   		<field name="name">room.management.tree</field>
+   		<field name="model">room.management</field>
+   		<field name="arch" type="xml">
+      		<tree string="Room Tree">
+				<field name="name" />
+      		</tree>
+   		</field>
+	</record>
+</odoo>

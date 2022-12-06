@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="room_detail_1" model="room.detail" forcecreate="True">
+			<field name="name">VILLA</field>
+            <field name="rate" >10</field>
+            <field name="size" >200000</field>
+            <field name="room_address" >Đà Nẵng</field>
+			<field name="price">2000</field>
+		</record>
+		<record id="room_detail_3" model="room.detail" forcecreate="True">
+			<field name="name">BEL AIR</field>
+            <field name="rate" >10</field>
+            <field name="size" >150000</field>
+            <field name="room_address" >Bình Thuận</field>
+			<field name="price">40500</field>
+		</record>
+		<record id="room_detail_2" model="room.detail">
+			<field name="name">LUXURY</field>
+            <field name="rate" >10</field>
+            <field name="size" >120000</field>
+            <field name="room_address" >Hà Nội</field>
+			<field name="price">4000</field>
+		</record>
+		<record id="room_detail_4" model="room.detail" forcecreate="True">
+			<field name="name">Sector Villas</field>
+            <field name="rate" >10</field>
+            <field name="size" >100000</field>
+            <field name="room_address" >Bình Thuận</field>
+			<field name="price">6000</field>
+		</record>
+		<record id="room_detail_5" model="room.detail" forcecreate="True">
+			<field name="name">Emirates Hills</field>
+            <field name="rate"> 9</field>
+            <field name="size" >54000</field>
+            <field name="room_address" >Quảng Ninh</field>
+			<field name="price">5000</field>
+		</record>
+		<record id="room_detail_6" model="room.detail" forcecreate="True">
+			<field name="name">Over Yonder</field>
+            <field name="rate" >10</field>
+            <field name="size" >230000</field>
+            <field name="room_address" >Nam Định</field>
+			<field name="price">7000</field>
+		</record>
+		<record id="room_detail_7" model="room.detail" forcecreate="True">
+			<field name="name">Ellison Estate</field>
+            <field name="rate" >10</field>
+            <field name="size" >73000</field>
+            <field name="room_address" >Tp HCM</field>
+			<field name="price">32000</field>
+		</record>
+	</data>
+</odoo>

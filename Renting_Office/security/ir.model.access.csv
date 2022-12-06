@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ace_room,room_management.room_management_user,model_room_management,,1,1,1,1
+ace_room_detail_admin,room_detail.room_detail_admin,model_room_detail,room_management_group_admin,1,1,1,1
+ace_room_detail_user,room_detail.room_detail_user,model_room_detail,room_management_group_user,1,0,0,0
+ace_room_manager_admin,room_manager.room_manager_admin,model_room_manager,room_management_group_admin,1,1,1,1
+ace_room_manager_user,room_manager.room_manager_user,model_room_manager,room_management_group_user,1,0,0,0
+ace_customer_user,customer.customer user,model_customer,room_management_group_user,1,0,0,0
+ace_customer_admin,customer.customer admin,model_customer,room_management_group_admin,1,1,1,1
+,,,,,,,
+ace_customer_report,wizard.customer_report_user,model_customer_report,room_management_group_admin,1,1,1,1
+ace_contact_user,contact.contact user,model_customer,room_management_group_user,1,0,0,0
+ace_contact_admin,contact.contact admin,model_customer,room_management_group_admin,1,1,1,1
+ace_room_service,room_service.room_service_user,model_room_service,room_management_group_admin,1,1,1,1

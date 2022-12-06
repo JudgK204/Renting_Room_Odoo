@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 	<record id="module_renting_office" model="ir.module.category">
+   		<field name="name">Renting Office</field>
+   		<field name="sequence">10</field>
+	</record>
+ 
+	<record id="module_renting_office_management" model="ir.module.category">
+   		<field name="name">Office</field>
+   		 <field name="parent_id" ref="module_renting_office" />
+  		<field name="sequence">20</field>
+	</record>
+
+	<record id="room_management_group_user" model="res.groups">
+   		<field name="name">User</field>
+   		<field name="category_id" ref="module_renting_office_management" />
+	</record>
+
+	<record id="room_management_group_admin" model="res.groups">
+   		<field name="name">Administrator</field>
+   		<field name="category_id" ref="module_renting_office_management" />
+		<field name="users" eval="[(4, ref('base.user_admin'))]" />
+	</record>
+<!-- ========================================================================= -->
+	<record id="room_detail_rule_user" model="ir.rule">
+  		<field name="name">User rule </field>
+  		<field name="model_id" ref="model_room_detail" />
+  		<field name="groups" eval="[(4, ref('Renting_Office.room_management_group_user'))]" />
+  		<field name="domain_force">['|',('state', '=', '1'),('state','=','2')]</field>
+	</record>
+
+	<record id="room_detail_rule_admin" model="ir.rule">
+  		<field name="name">Admin rule</field>
+  		<field name="model_id" ref="model_room_detail" />
+  		<field name="groups" eval="[(4, ref('Renting_Office.room_management_group_admin'))]" />
+  		<field name="domain_force">[(1, '=', 1)]</field>
+	</record>
+</odoo>
